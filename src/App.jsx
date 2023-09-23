@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import { Container, Row, Col, Card, Form } from "react-bootstrap";
 import { useDebounce } from "use-debounce";
 import { getMovieList, searchMovies } from "./api";
+import FooterComponent from "./components/FooterComponent";
 
 const App = () => {
   const [popularMovies, setPopularMovies] = useState([]);
@@ -88,6 +89,7 @@ const App = () => {
           <PopularMovieList />
         </Row>
       </Container>
+      <FooterComponent />
     </div>
   );
 };
