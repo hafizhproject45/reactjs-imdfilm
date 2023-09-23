@@ -28,6 +28,7 @@ p {
   overflow: hidden;
   text-overflow: ellipsis;
   max-width: 100%;
+  cursor: default;
 }
 .homepage .rating {
   font-size: 2.5rem;
@@ -36,4 +37,26 @@ p {
 .homepage .release {
   font-style: italic;
   margin-top: -15px;
+}
+.footer .title {
+  font-weight: bold;
+}
+.footer .sosial {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.footer .sosial i {
+  font-size: 24px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  padding-right: 5x;
+}
+.footer .mail {
+  display: flex;
+  align-items: center;
+  column-gap: 5px;
+}
+.footer a {
+  color: white;
 }
